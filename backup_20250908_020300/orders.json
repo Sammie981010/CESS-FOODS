@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "order_no": "ORD-0001",
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "CHICKEN WINGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "CHICKEN BREAST",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      },
+      {
+        "item": "CHICKEN LEGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      }
+    ],
+    "total_amount": 42000.0,
+    "order_date": "2025-09-01T22:12:25.746905",
+    "status": "Pending"
+  },
+  {
+    "id": 2,
+    "order_no": "ORD-0002",
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "CHICKEN BREAST",
+        "quantity": 7.0,
+        "price": 600.0,
+        "total": 4200.0
+      },
+      {
+        "item": "CHICKEN WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      }
+    ],
+    "total_amount": 10200.0,
+    "order_date": "2025-09-01T22:13:12.362528",
+    "status": "Pending"
+  }
+]

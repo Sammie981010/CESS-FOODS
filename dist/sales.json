@@ -1,0 +1,1476 @@
+[
+  {
+    "id": 1,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 19.8,
+        "price": 700.0,
+        "total": 13860.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 19.8,
+        "price": 600.0,
+        "total": 11880.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 12.7,
+        "price": 600.0,
+        "total": 7620.0
+      }
+    ],
+    "total_amount": 33360.0,
+    "sale_date": "2025-09-01T07:52:12"
+  },
+  {
+    "id": 4,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 20.3,
+        "price": 600.0,
+        "total": 12180.0
+      }
+    ],
+    "total_amount": 12180.0,
+    "sale_date": "2025-09-03T07:58:04"
+  },
+  {
+    "id": 5,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      }
+    ],
+    "total_amount": 4900.0,
+    "sale_date": "2025-09-04T07:58:35"
+  },
+  {
+    "id": 16,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 35.0,
+        "price": 600.0,
+        "total": 21000.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 19.9,
+        "price": 600.0,
+        "total": 11940.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 10.2,
+        "price": 700.0,
+        "total": 7139.999999999999
+      }
+    ],
+    "total_amount": 40080.0,
+    "sale_date": "2025-09-10T08:23:03"
+  },
+  {
+    "id": 17,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 33.0,
+        "price": 600.0,
+        "total": 19800.0
+      }
+    ],
+    "total_amount": 19800.0,
+    "sale_date": "2025-09-11T08:24:05"
+  },
+  {
+    "id": 18,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 30.3,
+        "price": 600.0,
+        "total": 18180.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 30.3,
+        "price": 600.0,
+        "total": 18180.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 19.7,
+        "price": 700.0,
+        "total": 13790.0
+      }
+    ],
+    "total_amount": 50150.0,
+    "sale_date": "2025-09-11T08:26:05"
+  },
+  {
+    "id": 19,
+    "customer_name": "IBIZA",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 5.0,
+        "price": 700.0,
+        "total": 3500.0
+      },
+      {
+        "item": "CAPON",
+        "quantity": 15.0,
+        "price": 550.0,
+        "total": 8250.0
+      }
+    ],
+    "total_amount": 11750.0,
+    "sale_date": "2025-09-11T08:26:42"
+  },
+  {
+    "id": 20,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 19.7,
+        "price": 600.0,
+        "total": 11820.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 20.0,
+        "price": 700.0,
+        "total": 14000.0
+      }
+    ],
+    "total_amount": 43820.0,
+    "sale_date": "2025-09-12T08:27:43"
+  },
+  {
+    "id": 21,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      }
+    ],
+    "total_amount": 10900.0,
+    "sale_date": "2025-09-13T08:28:34"
+  },
+  {
+    "id": 22,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 20.4,
+        "price": 700.0,
+        "total": 14279.999999999998
+      },
+      {
+        "item": "WINGS",
+        "quantity": 30.7,
+        "price": 600.0,
+        "total": 18420.0
+      },
+      {
+        "item": "LEGS ",
+        "quantity": 29.4,
+        "price": 600.0,
+        "total": 17640.0
+      }
+    ],
+    "total_amount": 50340.0,
+    "sale_date": "2025-09-13T08:29:24"
+  },
+  {
+    "id": 23,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 20.2,
+        "price": 700.0,
+        "total": 14140.0
+      }
+    ],
+    "total_amount": 14140.0,
+    "sale_date": "2025-09-17T08:29:52"
+  },
+  {
+    "id": 24,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 5.0,
+        "price": 600.0,
+        "total": 3000.0
+      }
+    ],
+    "total_amount": 7900.0,
+    "sale_date": "2025-09-18T08:30:25"
+  },
+  {
+    "id": 25,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 33.0,
+        "price": 600.0,
+        "total": 19800.0
+      }
+    ],
+    "total_amount": 19800.0,
+    "sale_date": "2025-09-18T08:30:47"
+  },
+  {
+    "id": 26,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 14.5,
+        "price": 600.0,
+        "total": 8700.0
+      }
+    ],
+    "total_amount": 8700.0,
+    "sale_date": "2025-09-19T08:31:14"
+  },
+  {
+    "id": 27,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 28.5,
+        "price": 600.0,
+        "total": 17100.0
+      }
+    ],
+    "total_amount": 45600.0,
+    "sale_date": "2025-09-19T08:32:35"
+  },
+  {
+    "id": 28,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 20.7,
+        "price": 600.0,
+        "total": 12420.0
+      }
+    ],
+    "total_amount": 12420.0,
+    "sale_date": "2025-09-20T08:33:07"
+  },
+  {
+    "id": 29,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 29.9,
+        "price": 600.0,
+        "total": 17940.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      }
+    ],
+    "total_amount": 40440.0,
+    "sale_date": "2025-09-20T08:36:54"
+  },
+  {
+    "id": 30,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      }
+    ],
+    "total_amount": 18000.0,
+    "sale_date": "2025-09-23T08:37:19"
+  },
+  {
+    "id": 31,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      }
+    ],
+    "total_amount": 4900.0,
+    "sale_date": "2025-09-24T08:37:41"
+  },
+  {
+    "id": 32,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 22.24,
+        "price": 700.0,
+        "total": 15567.999999999998
+      }
+    ],
+    "total_amount": 15567.999999999998,
+    "sale_date": "2025-09-24T08:43:18"
+  },
+  {
+    "id": 33,
+    "customer_name": "IBIZA",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 5.0,
+        "price": 700.0,
+        "total": 3500.0
+      },
+      {
+        "item": "CAPON",
+        "quantity": 10.2,
+        "price": 550.0,
+        "total": 5610.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 9.8,
+        "price": 600.0,
+        "total": 5880.0
+      }
+    ],
+    "total_amount": 14990.0,
+    "sale_date": "2025-09-24T08:44:52"
+  },
+  {
+    "id": 34,
+    "customer_name": "S0HO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 15.0,
+        "price": 600.0,
+        "total": 9000.0
+      }
+    ],
+    "total_amount": 9000.0,
+    "sale_date": "2025-09-25T08:45:33"
+  },
+  {
+    "id": 35,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 33.0,
+        "price": 600.0,
+        "total": 19800.0
+      }
+    ],
+    "total_amount": 19800.0,
+    "sale_date": "2025-09-25T08:46:49"
+  },
+  {
+    "id": 36,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 29.2,
+        "price": 600.0,
+        "total": 17520.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 15.1,
+        "price": 700.0,
+        "total": 10570.0
+      }
+    ],
+    "total_amount": 28090.0,
+    "sale_date": "2025-09-25T08:47:50"
+  },
+  {
+    "id": 37,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 7.0,
+        "price": 600.0,
+        "total": 4200.0
+      }
+    ],
+    "total_amount": 4200.0,
+    "sale_date": "2025-09-26T08:48:30"
+  },
+  {
+    "id": 38,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      }
+    ],
+    "total_amount": 30000.0,
+    "sale_date": "2025-09-26T08:49:24"
+  },
+  {
+    "id": 39,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      }
+    ],
+    "total_amount": 10900.0,
+    "sale_date": "2025-09-27T08:50:16"
+  },
+  {
+    "id": 40,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 20.3,
+        "price": 700.0,
+        "total": 14210.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 20.9,
+        "price": 600.0,
+        "total": 12540.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 40.3,
+        "price": 600.0,
+        "total": 24180.0
+      }
+    ],
+    "total_amount": 50930.0,
+    "sale_date": "2025-09-27T08:51:21"
+  },
+  {
+    "id": 41,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      }
+    ],
+    "total_amount": 10500.0,
+    "sale_date": "2025-09-30T08:51:51"
+  },
+  {
+    "id": 30,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 5.0,
+        "price": 600.0,
+        "total": 3000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      }
+    ],
+    "total_amount": 7900.0,
+    "sale_date": "2025-09-01T03:47:44"
+  },
+  {
+    "id": 31,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 5.0,
+        "price": 600.0,
+        "total": 3000.0
+      }
+    ],
+    "total_amount": 3000.0,
+    "sale_date": "2025-09-01T03:48:37"
+  },
+  {
+    "id": 32,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 33.0,
+        "price": 600.0,
+        "total": 19800.0
+      }
+    ],
+    "total_amount": 19800.0,
+    "sale_date": "2025-09-04T03:49:34"
+  },
+  {
+    "id": 33,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.4,
+        "price": 700.0,
+        "total": 10780.0
+      }
+    ],
+    "total_amount": 10780.0,
+    "sale_date": "2025-09-04T03:50:17"
+  },
+  {
+    "id": 34,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 6.9,
+        "price": 600.0,
+        "total": 4140.0
+      }
+    ],
+    "total_amount": 10140.0,
+    "sale_date": "2025-09-05T03:51:18"
+  },
+  {
+    "id": 35,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      }
+    ],
+    "total_amount": 18000.0,
+    "sale_date": "2025-09-05T03:51:56"
+  },
+  {
+    "id": 36,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 35.0,
+        "price": 600.0,
+        "total": 21000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      }
+    ],
+    "total_amount": 31500.0,
+    "sale_date": "2025-09-06T03:53:21"
+  },
+  {
+    "id": 37,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 5.0,
+        "price": 700.0,
+        "total": 3500.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 5.0,
+        "price": 600.0,
+        "total": 3000.0
+      }
+    ],
+    "total_amount": 6500.0,
+    "sale_date": "2025-09-08T03:58:02"
+  },
+  {
+    "id": 38,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      }
+    ],
+    "total_amount": 10900.0,
+    "sale_date": "2025-09-09T03:59:05"
+  },
+  {
+    "id": 39,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 15.0,
+        "price": 600.0,
+        "total": 9000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      }
+    ],
+    "total_amount": 37500.0,
+    "sale_date": "2025-09-08T04:02:02"
+  },
+  {
+    "id": 40,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 5.0,
+        "price": 700.0,
+        "total": 3500.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 5.0,
+        "price": 500.0,
+        "total": 2500.0
+      }
+    ],
+    "total_amount": 6000.0,
+    "sale_date": "2025-09-09T04:03:55"
+  },
+  {
+    "id": 41,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.2,
+        "price": 700.0,
+        "total": 10640.0
+      }
+    ],
+    "total_amount": 10640.0,
+    "sale_date": "2025-08-04T05:41:32"
+  },
+  {
+    "id": 42,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 14.9,
+        "price": 600.0,
+        "total": 8940.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 20.2,
+        "price": 600.0,
+        "total": 12120.0
+      }
+    ],
+    "total_amount": 21060.0,
+    "sale_date": "2025-08-05T05:43:15"
+  },
+  {
+    "id": 43,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      }
+    ],
+    "total_amount": 10900.0,
+    "sale_date": "2025-08-06T05:44:59"
+  },
+  {
+    "id": 44,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 5.0,
+        "price": 600.0,
+        "total": 3000.0
+      }
+    ],
+    "total_amount": 3000.0,
+    "sale_date": "2025-08-07T05:46:06"
+  },
+  {
+    "id": 45,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 33.0,
+        "price": 600.0,
+        "total": 19800.0
+      }
+    ],
+    "total_amount": 19800.0,
+    "sale_date": "2025-08-07T05:46:49"
+  },
+  {
+    "id": 46,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 14.7,
+        "price": 700.0,
+        "total": 10290.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 29.7,
+        "price": 600.0,
+        "total": 17820.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      }
+    ],
+    "total_amount": 46110.0,
+    "sale_date": "2025-08-07T05:48:09"
+  },
+  {
+    "id": 47,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 20.0,
+        "price": 700.0,
+        "total": 14000.0
+      }
+    ],
+    "total_amount": 26000.0,
+    "sale_date": "2025-08-08T05:49:09"
+  },
+  {
+    "id": 48,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      }
+    ],
+    "total_amount": 10900.0,
+    "sale_date": "2025-08-08T05:50:02"
+  },
+  {
+    "id": 49,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      }
+    ],
+    "total_amount": 46500.0,
+    "sale_date": "2025-08-09T05:51:03"
+  },
+  {
+    "id": 50,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 33.6,
+        "price": 600.0,
+        "total": 20160.0
+      }
+    ],
+    "total_amount": 20160.0,
+    "sale_date": "2025-08-09T05:51:52"
+  },
+  {
+    "id": 51,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      }
+    ],
+    "total_amount": 10500.0,
+    "sale_date": "2025-08-11T05:52:34"
+  },
+  {
+    "id": 52,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 10.3,
+        "price": 600.0,
+        "total": 6180.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 5.0,
+        "price": 700.0,
+        "total": 3500.0
+      }
+    ],
+    "total_amount": 9680.0,
+    "sale_date": "2025-08-12T05:53:30"
+  },
+  {
+    "id": 53,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      }
+    ],
+    "total_amount": 18000.0,
+    "sale_date": "2025-08-12T05:54:14"
+  },
+  {
+    "id": 54,
+    "customer_name": "IBIZA",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 5.0,
+        "price": 600.0,
+        "total": 3000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 5.0,
+        "price": 700.0,
+        "total": 3500.0
+      }
+    ],
+    "total_amount": 12500.0,
+    "sale_date": "2025-08-13T05:56:38"
+  },
+  {
+    "id": 55,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      }
+    ],
+    "total_amount": 6000.0,
+    "sale_date": "2025-08-14T05:57:12"
+  },
+  {
+    "id": 56,
+    "customer_name": "GEMIN",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 35.0,
+        "price": 600.0,
+        "total": 21000.0
+      }
+    ],
+    "total_amount": 21000.0,
+    "sale_date": "2025-08-14T05:58:09"
+  },
+  {
+    "id": 57,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 28.2,
+        "price": 600.0,
+        "total": 16920.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 30.4,
+        "price": 600.0,
+        "total": 18240.0
+      }
+    ],
+    "total_amount": 45660.0,
+    "sale_date": "2025-08-14T05:59:27"
+  },
+  {
+    "id": 58,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 30.4,
+        "price": 600.0,
+        "total": 18240.0
+      }
+    ],
+    "total_amount": 18240.0,
+    "sale_date": "2025-08-15T06:00:06"
+  },
+  {
+    "id": 59,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      }
+    ],
+    "total_amount": 6000.0,
+    "sale_date": "2025-08-16T06:00:50"
+  },
+  {
+    "id": 60,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 33.2,
+        "price": 600.0,
+        "total": 19920.0
+      }
+    ],
+    "total_amount": 19920.0,
+    "sale_date": "2025-08-16T06:01:32"
+  },
+  {
+    "id": 61,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 39.5,
+        "price": 600.0,
+        "total": 23700.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 40.0,
+        "price": 600.0,
+        "total": 24000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 30.0,
+        "price": 700.0,
+        "total": 21000.0
+      }
+    ],
+    "total_amount": 68700.0,
+    "sale_date": "2025-08-16T06:02:52"
+  },
+  {
+    "id": 62,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 10.0,
+        "price": 600.0,
+        "total": 6000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 5.0,
+        "price": 700.0,
+        "total": 3500.0
+      }
+    ],
+    "total_amount": 9500.0,
+    "sale_date": "2025-08-18T06:03:48"
+  },
+  {
+    "id": 63,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.5,
+        "price": 700.0,
+        "total": 10850.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      }
+    ],
+    "total_amount": 22850.0,
+    "sale_date": "2025-08-19T06:04:59"
+  },
+  {
+    "id": 64,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 14.85,
+        "price": 600.0,
+        "total": 8910.0
+      }
+    ],
+    "total_amount": 8910.0,
+    "sale_date": "2025-08-21T06:05:45"
+  },
+  {
+    "id": 65,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 32.4,
+        "price": 600.0,
+        "total": 19440.0
+      }
+    ],
+    "total_amount": 19440.0,
+    "sale_date": "2025-08-21T06:06:27"
+  },
+  {
+    "id": 66,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 14.6,
+        "price": 600.0,
+        "total": 8760.0
+      }
+    ],
+    "total_amount": 26760.0,
+    "sale_date": "2025-08-21T06:09:39"
+  },
+  {
+    "id": 67,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 5.0,
+        "price": 700.0,
+        "total": 3500.0
+      }
+    ],
+    "total_amount": 3500.0,
+    "sale_date": "2025-08-22T06:10:16"
+  },
+  {
+    "id": 68,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      }
+    ],
+    "total_amount": 40500.0,
+    "sale_date": "2025-08-22T06:11:28"
+  },
+  {
+    "id": 69,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 34.0,
+        "price": 600.0,
+        "total": 20400.0
+      }
+    ],
+    "total_amount": 20400.0,
+    "sale_date": "2025-08-23T06:12:20"
+  },
+  {
+    "id": 70,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.5,
+        "price": 700.0,
+        "total": 10850.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 40.0,
+        "price": 600.0,
+        "total": 24000.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      }
+    ],
+    "total_amount": 46850.0,
+    "sale_date": "2025-08-23T06:13:50"
+  },
+  {
+    "id": 71,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      }
+    ],
+    "total_amount": 12000.0,
+    "sale_date": "2025-08-26T06:14:34"
+  },
+  {
+    "id": 72,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 20.0,
+        "price": 700.0,
+        "total": 14000.0
+      }
+    ],
+    "total_amount": 14000.0,
+    "sale_date": "2025-08-27T06:15:49"
+  },
+  {
+    "id": 73,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 7.0,
+        "price": 700.0,
+        "total": 4900.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 5.0,
+        "price": 600.0,
+        "total": 3000.0
+      }
+    ],
+    "total_amount": 7900.0,
+    "sale_date": "2025-08-28T06:16:59"
+  },
+  {
+    "id": 74,
+    "customer_name": "GEMINI",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 33.5,
+        "price": 600.0,
+        "total": 20100.0
+      }
+    ],
+    "total_amount": 20100.0,
+    "sale_date": "2025-08-28T06:17:49"
+  },
+  {
+    "id": 75,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      }
+    ],
+    "total_amount": 12000.0,
+    "sale_date": "2025-08-28T06:18:37"
+  },
+  {
+    "id": 76,
+    "customer_name": "SOHO",
+    "items": [
+      {
+        "item": "WINGS",
+        "quantity": 15.0,
+        "price": 600.0,
+        "total": 9000.0
+      }
+    ],
+    "total_amount": 9000.0,
+    "sale_date": "2025-08-29T06:19:23"
+  },
+  {
+    "id": 77,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "LEGS",
+        "quantity": 30.0,
+        "price": 600.0,
+        "total": 18000.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 20.0,
+        "price": 600.0,
+        "total": 12000.0
+      },
+      {
+        "item": "BREAST",
+        "quantity": 10.0,
+        "price": 700.0,
+        "total": 7000.0
+      }
+    ],
+    "total_amount": 37000.0,
+    "sale_date": "2025-08-29T06:21:27"
+  },
+  {
+    "id": 78,
+    "customer_name": "IBIZA",
+    "items": [
+      {
+        "item": "CAPON",
+        "quantity": 10.4,
+        "price": 550.0,
+        "total": 5720.0
+      }
+    ],
+    "total_amount": 5720.0,
+    "sale_date": "2025-08-29T06:22:07"
+  },
+  {
+    "id": 79,
+    "customer_name": "OYSTERBAY",
+    "items": [
+      {
+        "item": "BREAST",
+        "quantity": 15.0,
+        "price": 700.0,
+        "total": 10500.0
+      },
+      {
+        "item": "WINGS",
+        "quantity": 19.8,
+        "price": 600.0,
+        "total": 11880.0
+      },
+      {
+        "item": "LEGS",
+        "quantity": 30.5,
+        "price": 600.0,
+        "total": 18300.0
+      }
+    ],
+    "total_amount": 40680.0,
+    "sale_date": "2025-08-30T06:23:24"
+  },
+  {
+    "id": 80,
+    "customer_name": "IBIZA",
+    "items": [
+      {
+        "item": "CAPON",
+        "quantity": 12.8,
+        "price": 550.0,
+        "total": 7040.0
+      }
+    ],
+    "total_amount": 7040.0,
+    "sale_date": "2025-08-30T06:24:11"
+  }
+]

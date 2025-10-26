@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "supplier": "GEORGE",
+    "amount": 200000.0,
+    "method": "MPESA",
+    "reference": "X30D86BFCCC77",
+    "payment_date": "2025-08-16T14:04:00",
+    "type": "supplier_payment"
+  },
+  {
+    "id": 2,
+    "supplier": "GEORGE",
+    "amount": 200000.0,
+    "method": "BANK",
+    "reference": "THN3KA1R7D",
+    "payment_date": "2025-08-23T11:16:00",
+    "type": "supplier_payment"
+  },
+  {
+    "id": 3,
+    "supplier": "GEORGE",
+    "amount": 100000.0,
+    "method": "BANK",
+    "reference": "THN3KANLN1",
+    "payment_date": "2025-08-23T11:21:00",
+    "type": "supplier_payment"
+  },
+  {
+    "id": 4,
+    "supplier": "GEORGE",
+    "amount": 89550.0,
+    "method": "MPESA",
+    "reference": "TIT4M60XRW",
+    "payment_date": "2025-09-29T03:08:00",
+    "type": "supplier_payment"
+  },
+  {
+    "id": 5,
+    "supplier": "GEORGE",
+    "amount": 300000.0,
+    "method": "CASH",
+    "reference": "KEITH",
+    "payment_date": "2025-09-30T10:30:00",
+    "type": "supplier_payment"
+  },
+  {
+    "id": 7,
+    "supplier": "George",
+    "amount": 89550.0,
+    "method": "MPESA",
+    "reference": "TIT4M60XRW",
+    "payment_date": "2025-10-05T12:51:00",
+    "type": "supplier_payment"
+  },
+  {
+    "id": 7,
+    "supplier": "George",
+    "amount": 176850.0,
+    "method": "CASH",
+    "reference": "",
+    "payment_date": "2025-10-05T12:52:00",
+    "type": "supplier_payment"
+  }
+]

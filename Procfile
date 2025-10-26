@@ -1,0 +1,1 @@
+web: gunicorn hirewise_web:app
