@@ -1184,8 +1184,16 @@ class FoodApp:
             from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
             from reportlab.lib.styles import getSampleStyleSheet
             from reportlab.lib import colors
+            from tkinter import filedialog
             
-            filename = f"sales_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            default_name = f"sales_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1203,17 +1211,17 @@ class FoodApp:
             story.append(Spacer(1, 10))
             
             # Table data
-            data = [['Item', 'Quantity', 'Price', 'Total']]
+            data = [['Item', 'Qty (Kgs)', 'Price/Kg', 'Total (KSH)']]
             for item in self.sales_items:
                 data.append([
                     item['item'],
-                    str(item['quantity']),
-                    f"KSH {item['price']:.2f}",
-                    f"KSH {item['total']:.2f}"
+                    f"{item['quantity']:.1f}",
+                    f"{item['price']:.0f}",
+                    f"{item['total']:.2f}"
                 ])
             
             # Add total row
-            data.append(['', '', 'TOTAL:', f"KSH {self.sales_total:.2f}"])
+            data.append(['', '', 'TOTAL:', f"{self.sales_total:.2f}"])
             
             # Create table
             table = Table(data)
@@ -1250,8 +1258,16 @@ class FoodApp:
             from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
             from reportlab.lib.styles import getSampleStyleSheet
             from reportlab.lib import colors
+            from tkinter import filedialog
             
-            filename = f"purchases_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            default_name = f"purchases_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1263,18 +1279,18 @@ class FoodApp:
             story.append(Spacer(1, 20))
             
             # Table data
-            data = [['Supplier', 'Item', 'Quantity', 'Price', 'Total']]
+            data = [['Supplier', 'Item', 'Qty (Kgs)', 'Price/Kg', 'Total (KSH)']]
             for item in self.purchase_items:
                 data.append([
                     item['supplier'],
                     item['item'],
-                    str(item['quantity']),
-                    f"KSH {item['price']:.2f}",
-                    f"KSH {item['total']:.2f}"
+                    f"{item['quantity']:.1f}",
+                    f"{item['price']:.0f}",
+                    f"{item['total']:.2f}"
                 ])
             
             # Add total row
-            data.append(['', '', '', 'TOTAL:', f"KSH {self.purchase_total:.2f}"])
+            data.append(['', '', '', 'TOTAL:', f"{self.purchase_total:.2f}"])
             
             # Create table
             table = Table(data)
@@ -1327,7 +1343,15 @@ class FoodApp:
                 messagebox.showinfo("Info", f"No purchases found for {supplier}")
                 return
             
-            filename = f"supplier_statement_{supplier}_{datetime.now().strftime('%Y%m%d')}.pdf"
+            from tkinter import filedialog
+            default_name = f"supplier_statement_{supplier}_{datetime.now().strftime('%Y%m%d')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1344,7 +1368,7 @@ class FoodApp:
             
             # Purchases table
             story.append(Paragraph("PURCHASES:", styles['Heading3']))
-            purchase_data = [['Date', 'Item', 'Quantity', 'Amount']]
+            purchase_data = [['Date', 'Item', 'Quantity', 'Amount (KSH)']]
             total_purchases = 0
             
             for purchase in supplier_purchases:
@@ -1356,10 +1380,10 @@ class FoodApp:
                     date_str,
                     purchase.get('item', 'N/A'),
                     str(purchase.get('quantity', 0)),
-                    f"KSH {amount:.2f}"
+                    f"{amount:.2f}"
                 ])
             
-            purchase_data.append(['', '', 'TOTAL:', f"KSH {total_purchases:.2f}"])
+            purchase_data.append(['', '', 'TOTAL:', f"{total_purchases:.2f}"])
             
             purchase_table = Table(purchase_data)
             purchase_table.setStyle(TableStyle([
@@ -1379,7 +1403,7 @@ class FoodApp:
             
             # Payments table
             story.append(Paragraph("PAYMENTS:", styles['Heading3']))
-            payment_data = [['Date', 'Amount', 'Method', 'Reference']]
+            payment_data = [['Date', 'Amount (KSH)', 'Method', 'Reference']]
             total_payments = 0
             
             for payment in supplier_payments:
@@ -1389,7 +1413,7 @@ class FoodApp:
                 
                 payment_data.append([
                     date_str,
-                    f"KSH {amount:.2f}",
+                    f"{amount:.2f}",
                     payment.get('method', 'N/A'),
                     payment.get('reference', 'N/A')
                 ])
@@ -1397,7 +1421,7 @@ class FoodApp:
             if not supplier_payments:
                 payment_data.append(['No payments recorded', '', '', ''])
             else:
-                payment_data.append(['', f"KSH {total_payments:.2f}", 'TOTAL', ''])
+                payment_data.append(['', f"{total_payments:.2f}", 'TOTAL', ''])
             
             payment_table = Table(payment_data)
             payment_table.setStyle(TableStyle([
@@ -1420,9 +1444,9 @@ class FoodApp:
             status = "PAID" if balance_due <= 0 else "OUTSTANDING"
             
             summary_data = [
-                ['Total Purchases:', f"KSH {total_purchases:.2f}"],
-                ['Total Payments:', f"KSH {total_payments:.2f}"],
-                ['BALANCE DUE:', f"KSH {balance_due:.2f}"],
+                ['Total Purchases (KSH):', f"{total_purchases:.2f}"],
+                ['Total Payments (KSH):', f"{total_payments:.2f}"],
+                ['BALANCE DUE (KSH):', f"{balance_due:.2f}"],
                 ['STATUS:', status]
             ]
             
@@ -1469,7 +1493,15 @@ class FoodApp:
                 messagebox.showinfo("Info", "No sales found for the last 7 days")
                 return
             
-            filename = f"weekly_sales_{datetime.now().strftime('%Y%m%d')}.pdf"
+            from tkinter import filedialog
+            default_name = f"weekly_sales_{datetime.now().strftime('%Y%m%d')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1483,7 +1515,7 @@ class FoodApp:
             story.append(period)
             story.append(Spacer(1, 10))
             
-            data = [['Date', 'Customer', 'Items', 'Qty', 'Price/Kg', 'Item Total', 'Total']]
+            data = [['Date', 'Customer', 'Items', 'Qty (Kgs)', 'Price/Kg', 'Item Total (KSH)', 'Total (KSH)']]
             total_amount = 0
             
             weekly_sales.sort(key=lambda x: x.get('sale_date', ''), reverse=True)
@@ -1491,12 +1523,12 @@ class FoodApp:
                 date_str = sale.get('sale_date', '')[:10]
                 items_list = [item.get('item', '') for item in sale.get('items', [])]
                 items_str = '\n'.join(items_list) if items_list else 'N/A'
-                qty_list = [str(item.get('quantity', 0)) for item in sale.get('items', [])]
+                qty_list = [f"{item.get('quantity', 0):.1f}" for item in sale.get('items', [])]
                 qty_str = '\n'.join(qty_list) if qty_list else '0'
                 price_list = [f"{item.get('price', 0):.0f}" for item in sale.get('items', [])]
                 price_str = '\n'.join(price_list) if price_list else '0'
-                item_total_list = [f"{item.get('total', 0):.0f}" for item in sale.get('items', [])]
-                item_total_str = '\n'.join(item_total_list) if item_total_list else '0'
+                item_total_list = [f"{item.get('total', 0):.2f}" for item in sale.get('items', [])]
+                item_total_str = '\n'.join(item_total_list) if item_total_list else '0.00'
                 amount = sale.get('total_amount', 0)
                 total_amount += amount
                 
@@ -1507,10 +1539,10 @@ class FoodApp:
                     qty_str,
                     price_str,
                     item_total_str,
-                    f"KSH {amount:.2f}"
+                    f"{amount:.2f}"
                 ])
             
-            data.append(['', '', '', '', '', 'TOTAL:', f"KSH {total_amount:.2f}"])
+            data.append(['', '', '', '', '', 'TOTAL:', f"{total_amount:.2f}"])
             
             table = Table(data, colWidths=[40, 70, 100, 30, 40, 50, 50])
             table.setStyle(TableStyle([
@@ -1561,7 +1593,15 @@ class FoodApp:
                 messagebox.showinfo("Info", "No sales found for the last 30 days")
                 return
             
-            filename = f"monthly_sales_{datetime.now().strftime('%Y%m%d')}.pdf"
+            from tkinter import filedialog
+            default_name = f"monthly_sales_{datetime.now().strftime('%Y%m%d')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1575,7 +1615,7 @@ class FoodApp:
             story.append(period)
             story.append(Spacer(1, 10))
             
-            data = [['Date', 'Customer', 'Items', 'Qty', 'Price/Kg', 'Item Total', 'Total']]
+            data = [['Date', 'Customer', 'Items', 'Qty (Kgs)', 'Price/Kg', 'Item Total (KSH)', 'Total (KSH)']]
             total_amount = 0
             
             monthly_sales.sort(key=lambda x: x.get('sale_date', ''), reverse=True)
@@ -1583,12 +1623,12 @@ class FoodApp:
                 date_str = sale.get('sale_date', '')[:10]
                 items_list = [item.get('item', '') for item in sale.get('items', [])]
                 items_str = '\n'.join(items_list) if items_list else 'N/A'
-                qty_list = [str(item.get('quantity', 0)) for item in sale.get('items', [])]
+                qty_list = [f"{item.get('quantity', 0):.1f}" for item in sale.get('items', [])]
                 qty_str = '\n'.join(qty_list) if qty_list else '0'
                 price_list = [f"{item.get('price', 0):.0f}" for item in sale.get('items', [])]
                 price_str = '\n'.join(price_list) if price_list else '0'
-                item_total_list = [f"{item.get('total', 0):.0f}" for item in sale.get('items', [])]
-                item_total_str = '\n'.join(item_total_list) if item_total_list else '0'
+                item_total_list = [f"{item.get('total', 0):.2f}" for item in sale.get('items', [])]
+                item_total_str = '\n'.join(item_total_list) if item_total_list else '0.00'
                 amount = sale.get('total_amount', 0)
                 total_amount += amount
                 
@@ -1599,10 +1639,10 @@ class FoodApp:
                     qty_str,
                     price_str,
                     item_total_str,
-                    f"KSH {amount:.2f}"
+                    f"{amount:.2f}"
                 ])
             
-            data.append(['', '', '', '', '', 'TOTAL:', f"KSH {total_amount:.2f}"])
+            data.append(['', '', '', '', '', 'TOTAL:', f"{total_amount:.2f}"])
             
             table = Table(data, colWidths=[40, 70, 100, 30, 40, 50, 50])
             table.setStyle(TableStyle([
@@ -1652,7 +1692,15 @@ class FoodApp:
                 messagebox.showinfo("Info", "No purchases found for the last 7 days")
                 return
             
-            filename = f"weekly_purchases_{datetime.now().strftime('%Y%m%d')}.pdf"
+            from tkinter import filedialog
+            default_name = f"weekly_purchases_{datetime.now().strftime('%Y%m%d')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1666,7 +1714,7 @@ class FoodApp:
             story.append(period)
             story.append(Spacer(1, 10))
             
-            data = [['Date', 'Supplier', 'Item', 'Qty', 'Total']]
+            data = [['Date', 'Supplier', 'Item', 'Qty (Kgs)', 'Price/Kg', 'Total (KSH)']]
             total_amount = 0
             
             weekly_purchases.sort(key=lambda x: x.get('purchase_date', ''), reverse=True)
@@ -1679,13 +1727,14 @@ class FoodApp:
                     date_str,
                     purchase.get('supplier', 'N/A'),
                     purchase.get('item', 'N/A'),
-                    str(purchase.get('quantity', 0)),
-                    f"KSH {amount:.2f}"
+                    f"{purchase.get('quantity', 0):.1f}",
+                    f"{purchase.get('price', 0):.0f}",
+                    f"{amount:.2f}"
                 ])
             
-            data.append(['', '', '', 'TOTAL:', f"KSH {total_amount:.2f}"])
+            data.append(['', '', '', '', 'TOTAL:', f"{total_amount:.2f}"])
             
-            table = Table(data, colWidths=[70, 100, 80, 50, 70])
+            table = Table(data, colWidths=[60, 90, 70, 40, 45, 60])
             table.setStyle(TableStyle([
                 ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
                 ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
@@ -1733,7 +1782,15 @@ class FoodApp:
                 messagebox.showinfo("Info", "No purchases found for the last 30 days")
                 return
             
-            filename = f"monthly_purchases_{datetime.now().strftime('%Y%m%d')}.pdf"
+            from tkinter import filedialog
+            default_name = f"monthly_purchases_{datetime.now().strftime('%Y%m%d')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1828,7 +1885,15 @@ class FoodApp:
             customer = self.customer_entry.get().strip() or "Walk-in Customer"
             sale_date = self.sales_date_entry.get().strip() or datetime.now().strftime('%Y-%m-%d')
             
-            filename = f"sales_receipt_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            from tkinter import filedialog
+            default_name = f"sales_receipt_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1842,16 +1907,16 @@ class FoodApp:
             story.append(info)
             story.append(Spacer(1, 15))
             
-            data = [['Item', 'Qty', 'Price', 'Total']]
+            data = [['Item', 'Qty (Kgs)', 'Price/Kg', 'Total (KSH)']]
             for item in self.sales_items:
                 data.append([
                     item['item'],
-                    str(item['quantity']),
-                    f"KSH {item['price']:.2f}",
-                    f"KSH {item['total']:.2f}"
+                    f"{item['quantity']:.1f}",
+                    f"{item['price']:.0f}",
+                    f"{item['total']:.2f}"
                 ])
             
-            data.append(['', '', 'TOTAL:', f"KSH {self.sales_total:.2f}"])
+            data.append(['', '', 'TOTAL:', f"{self.sales_total:.2f}"])
             
             table = Table(data)
             table.setStyle(TableStyle([
@@ -1889,7 +1954,15 @@ class FoodApp:
             
             purchase_date = self.purchase_date_entry.get().strip() or datetime.now().strftime('%Y-%m-%d')
             
-            filename = f"purchase_receipt_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            from tkinter import filedialog
+            default_name = f"purchase_receipt_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -1903,17 +1976,17 @@ class FoodApp:
             story.append(info)
             story.append(Spacer(1, 15))
             
-            data = [['Supplier', 'Item', 'Qty', 'Price', 'Total']]
+            data = [['Supplier', 'Item', 'Qty (Kgs)', 'Price/Kg', 'Total (KSH)']]
             for item in self.purchase_items:
                 data.append([
                     item['supplier'],
                     item['item'],
-                    str(item['quantity']),
-                    f"KSH {item['price']:.2f}",
-                    f"KSH {item['total']:.2f}"
+                    f"{item['quantity']:.1f}",
+                    f"{item['price']:.0f}",
+                    f"{item['total']:.2f}"
                 ])
             
-            data.append(['', '', '', 'TOTAL:', f"KSH {self.purchase_total:.2f}"])
+            data.append(['', '', '', 'TOTAL:', f"{self.purchase_total:.2f}"])
             
             table = Table(data)
             table.setStyle(TableStyle([
@@ -2065,7 +2138,15 @@ class FoodApp:
             from reportlab.lib.styles import getSampleStyleSheet
             from reportlab.lib import colors
             
-            filename = f"payment_history_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            from tkinter import filedialog
+            default_name = f"payment_history_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -2075,7 +2156,7 @@ class FoodApp:
             story.append(title)
             story.append(Spacer(1, 20))
             
-            data = [['Date', 'Supplier', 'Amount', 'Method', 'Reference']]
+            data = [['Date', 'Supplier', 'Amount (KSH)', 'Method', 'Reference']]
             total_payments = 0
             
             for payment in payments:
@@ -2086,12 +2167,12 @@ class FoodApp:
                 data.append([
                     date_str,
                     payment.get('supplier', 'N/A'),
-                    f"KSH {amount:.2f}",
+                    f"{amount:.2f}",
                     payment.get('method', 'N/A'),
                     payment.get('reference', 'N/A')
                 ])
             
-            data.append(['', '', f"KSH {total_payments:.2f}", 'TOTAL', ''])
+            data.append(['', '', f"{total_payments:.2f}", 'TOTAL', ''])
             
             table = Table(data)
             table.setStyle(TableStyle([
@@ -2426,7 +2507,15 @@ class FoodApp:
                 messagebox.showinfo("Info", f"No sales found for {month}/{year}")
                 return
             
-            filename = f"sales_{month}_{year}.pdf"
+            from tkinter import filedialog
+            default_name = f"sales_{month}_{year}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -2436,7 +2525,7 @@ class FoodApp:
             story.append(title)
             story.append(Spacer(1, 15))
             
-            data = [['Date', 'Customer', 'Items', 'Qty', 'Price/Kg', 'Item Total', 'Total']]
+            data = [['Date', 'Customer', 'Items', 'Qty (Kgs)', 'Price/Kg', 'Item Total (KSH)', 'Total (KSH)']]
             total_amount = 0
             
             month_sales.sort(key=lambda x: x.get('sale_date', ''), reverse=True)
@@ -2444,12 +2533,12 @@ class FoodApp:
                 date_str = sale.get('sale_date', '')[:10]
                 items_list = [item.get('item', '') for item in sale.get('items', [])]
                 items_str = '\n'.join(items_list) if items_list else 'N/A'
-                qty_list = [str(item.get('quantity', 0)) for item in sale.get('items', [])]
+                qty_list = [f"{item.get('quantity', 0):.1f}" for item in sale.get('items', [])]
                 qty_str = '\n'.join(qty_list) if qty_list else '0'
                 price_list = [f"{item.get('price', 0):.0f}" for item in sale.get('items', [])]
                 price_str = '\n'.join(price_list) if price_list else '0'
-                item_total_list = [f"{item.get('total', 0):.0f}" for item in sale.get('items', [])]
-                item_total_str = '\n'.join(item_total_list) if item_total_list else '0'
+                item_total_list = [f"{item.get('total', 0):.2f}" for item in sale.get('items', [])]
+                item_total_str = '\n'.join(item_total_list) if item_total_list else '0.00'
                 amount = sale.get('total_amount', 0)
                 total_amount += amount
                 
@@ -2460,10 +2549,10 @@ class FoodApp:
                     qty_str,
                     price_str,
                     item_total_str,
-                    f"KSH {amount:.2f}"
+                    f"{amount:.2f}"
                 ])
             
-            data.append(['', '', '', '', '', 'TOTAL:', f"KSH {total_amount:.2f}"])
+            data.append(['', '', '', '', '', 'TOTAL:', f"{total_amount:.2f}"])
             
             table = Table(data, colWidths=[40, 70, 100, 30, 40, 50, 50])
             table.setStyle(TableStyle([
@@ -2507,7 +2596,15 @@ class FoodApp:
                 messagebox.showinfo("Info", f"No purchases found for {month}/{year}")
                 return
             
-            filename = f"purchases_{month}_{year}.pdf"
+            from tkinter import filedialog
+            default_name = f"purchases_{month}_{year}.pdf"
+            filename = filedialog.asksaveasfilename(
+                defaultextension=".pdf",
+                filetypes=[("PDF files", "*.pdf")],
+                initialfile=default_name
+            )
+            if not filename:
+                return
             doc = SimpleDocTemplate(filename, pagesize=letter)
             
             styles = getSampleStyleSheet()
@@ -2517,7 +2614,7 @@ class FoodApp:
             story.append(title)
             story.append(Spacer(1, 15))
             
-            data = [['Date', 'Supplier', 'Item', 'Qty', 'Total']]
+            data = [['Date', 'Supplier', 'Item', 'Qty (Kgs)', 'Price/Kg', 'Total']]
             total_amount = 0
             
             month_purchases.sort(key=lambda x: x.get('purchase_date', ''), reverse=True)
@@ -2530,13 +2627,14 @@ class FoodApp:
                     date_str,
                     purchase.get('supplier', 'N/A'),
                     purchase.get('item', 'N/A'),
-                    str(purchase.get('quantity', 0)),
+                    f"{purchase.get('quantity', 0):.1f} kg",
+                    f"KSH {purchase.get('price', 0):.0f}/kg",
                     f"KSH {amount:.2f}"
                 ])
             
-            data.append(['', '', '', 'TOTAL:', f"KSH {total_amount:.2f}"])
+            data.append(['', '', '', '', 'TOTAL:', f"KSH {total_amount:.2f}"])
             
-            table = Table(data, colWidths=[70, 100, 80, 50, 70])
+            table = Table(data, colWidths=[60, 90, 70, 40, 45, 60])
             table.setStyle(TableStyle([
                 ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
                 ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
